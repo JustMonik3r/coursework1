@@ -32,6 +32,10 @@ public class Employee {
         return salary;
     }
 
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
 
     public void setDepartment(int department) {
         this.department = department;
