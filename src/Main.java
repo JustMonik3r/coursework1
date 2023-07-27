@@ -2,7 +2,6 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
 
-    private final static Employee[] employees = new Employee[10];
 
     private static void printSeparator() {
         System.out.println();

@@ -3,11 +3,7 @@ public class EmployeeBook {
 
     public void changeEmployeeData(String fullName, double newSalary, int newDepartment) {
         for (int i = 0; i < employees.length; i++) {
-            if (employees[i] == null) {
-                continue;
-            }
-
-            if (employees[i].getFullName().equalsIgnoreCase(fullName)) {
+            if (employees[i] != null && employees[i].getFullName().equalsIgnoreCase(fullName)) {
                 employees[i].setSalary(newSalary);
                 employees[i].setDepartment(newDepartment);
                 break;
@@ -26,11 +22,7 @@ public class EmployeeBook {
 
     public void removeEmployee(long id) {
         for (int i = 0; i < employees.length; i++) {
-            if (employees[i] == null) {
-                continue;
-            }
-
-            if (employees[i].getId() == id) {
+            if (employees[i] != null && employees[i].getId() == id) {
                 employees[i] = null;
                 break;
             }
